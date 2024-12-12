@@ -7,9 +7,12 @@ using Exercise_9.Homework.@val;
 using Exercise_9;
 using Exercise_10;
 using Exercise_19;
+using Exercise_20;
+using Exercise_22;
 using System;
 using System.Reflection;
 using static Exercise_10.Program;
+using Exercise_2;
 
 namespace Exercise
 {
@@ -121,18 +124,18 @@ namespace Exercise
 
 
             // Exercise 10:
-           // Employ[] employees = new Employ[]
-           //{
-           //     new Employ("John", "Doe", new DateTime(1990, 1, 1), Country.USA, Gender.Male, Contacts.Email),
-           //     new Employ("Jane", "Smith", new DateTime(1992, 2, 2), Country.USA, Gender.Female, Contacts.Phone),
-           //     new Employ("Alice", "Johnson", new DateTime(1985, 3, 3), Country.England, Gender.Female, Contacts.Fax),
-           //     new Employ("Bob", "Brown", new DateTime(1988, 4, 4), Country.England, Gender.Male, Contacts.Address),
-           //     new Employ("Charlie", "Davis", new DateTime(1995, 5, 5), Country.France, Gender.Male, Contacts.Postal_Code),
-           //     new Employ("Diana", "Miller", new DateTime(1993, 6, 6), Country.France, Gender.Female, Contacts.Email),
-           //     new Employ("Eve", "Wilson", new DateTime(1987, 7, 7), Country.Georgia, Gender.Female, Contacts.Phone),
-           //     new Employ("Frank", "Moore", new DateTime(1991, 8, 8), Country.Georgia, Gender.Male, Contacts.Fax)
-           //};
-           // Employ.PrintEmployeesFromSameCountry(employees, Country.USA);
+            // Employ[] employees = new Employ[]
+            //{
+            //     new Employ("John", "Doe", new DateTime(1990, 1, 1), Country.USA, Gender.Male, Contacts.Email),
+            //     new Employ("Jane", "Smith", new DateTime(1992, 2, 2), Country.USA, Gender.Female, Contacts.Phone),
+            //     new Employ("Alice", "Johnson", new DateTime(1985, 3, 3), Country.England, Gender.Female, Contacts.Fax),
+            //     new Employ("Bob", "Brown", new DateTime(1988, 4, 4), Country.England, Gender.Male, Contacts.Address),
+            //     new Employ("Charlie", "Davis", new DateTime(1995, 5, 5), Country.France, Gender.Male, Contacts.Postal_Code),
+            //     new Employ("Diana", "Miller", new DateTime(1993, 6, 6), Country.France, Gender.Female, Contacts.Email),
+            //     new Employ("Eve", "Wilson", new DateTime(1987, 7, 7), Country.Georgia, Gender.Female, Contacts.Phone),
+            //     new Employ("Frank", "Moore", new DateTime(1991, 8, 8), Country.Georgia, Gender.Male, Contacts.Fax)
+            //};
+            // Employ.PrintEmployeesFromSameCountry(employees, Country.USA);
 
 
 
@@ -149,28 +152,43 @@ namespace Exercise
 
             // Exercise 19:
 
-            Generic<string, int> example = new Generic<string, int>("Hello", 5);
+            //Generic<string, int> example = new Generic<string, int>("Hello", 5);
 
-            example.PrintAndReturn("Hello, World");
-            example.PrintAndReturn(123);
-            example.PrintAndReturn(45.67);
+            //example.PrintAndReturn("Hello, World");
+            //example.PrintAndReturn(123);
+            //example.PrintAndReturn(45.67);
 
-            example.UreturnT("Hello", 5);
+            //example.UreturnT("Hello", 5);
 
-            Generic<int[], int> arrayExample = new Generic<int[], int>(new int[] { 1, 2, 3 }, 5);
+            //Generic<int[], int> arrayExample = new Generic<int[], int>(new int[] { 1, 2, 3 }, 5);
 
-            arrayExample.PrintAndReturn(new int[] { 1, 2, 3 });
-            arrayExample.PrintAndReturn(123);
-            arrayExample.PrintAndReturn(45.67);
+            //arrayExample.PrintAndReturn(new int[] { 1, 2, 3 });
+            //arrayExample.PrintAndReturn(123);
+            //arrayExample.PrintAndReturn(45.67);
 
-            Generic<string, bool> stringBoolExample = new Generic<string, bool>("Hello", true);
+            //Generic<string, bool> stringBoolExample = new Generic<string, bool>("Hello", true);
 
-            stringBoolExample.PrintAndReturn("Hello, World");
-            stringBoolExample.PrintAndReturn(123);
-            stringBoolExample.PrintAndReturn(45.67);
+            //stringBoolExample.PrintAndReturn("Hello, World");
+            //stringBoolExample.PrintAndReturn(123);
+            //stringBoolExample.PrintAndReturn(45.67);
 
-            string result = stringBoolExample.UreturnT("Hello", true);
-            Console.WriteLine($"Returned value: {result}");
+            //string result = stringBoolExample.UreturnT("Hello", true);
+            //Console.WriteLine($"Returned value: {result}");
+
+
+
+            // Exercise 20:
+
+            _20_1.StackReverse();
+            _20_2.Fifo();
+            _20_3.HashtableFreq();
+            _20_4.ArrList();
+
+
+
+            // Exercise 21:
+
+            _2_1
         }
     }
 }
