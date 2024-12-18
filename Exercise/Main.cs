@@ -1,4 +1,5 @@
-﻿using Exercise_3;
+﻿using Exercise_2;
+using Exercise_3;
 using Exercise_4;
 using Exercise_5;
 using Exercise_6;
@@ -6,13 +7,12 @@ using Exercise_9.Homework.@ref;
 using Exercise_9.Homework.@val;
 using Exercise_9;
 using Exercise_10;
+using static Exercise_10.Program;
 using Exercise_19;
 using Exercise_20;
-using Exercise_22;
+
 using System;
 using System.Reflection;
-using static Exercise_10.Program;
-using Exercise_2;
 
 namespace Exercise
 {
@@ -179,16 +179,17 @@ namespace Exercise
 
             // Exercise 20:
 
-            _20_1.StackReverse();
-            _20_2.Fifo();
-            _20_3.HashtableFreq();
-            _20_4.ArrList();
+            ReverseString reverseString = new ReverseString();
+            Console.WriteLine("Enter a string to reverse:");
+            string input = Console.ReadLine();
+            string reversed = reverseString.Reverse(input);
+            Console.WriteLine($"Reversed string: {reversed}");
 
+            Console.WriteLine("\n");
 
 
             // Exercise 21:
 
-            _2_1
         }
     }
 }

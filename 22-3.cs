@@ -2,7 +2,7 @@
 {
     class _22_3
     {
-        static void Main()
+        static void LetterFreq()
         {
             Console.WriteLine("Enter text:");
             string input = Console.ReadLine();
