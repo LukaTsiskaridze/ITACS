@@ -179,17 +179,32 @@ namespace Exercise
 
             // Exercise 20:
 
-            ReverseString reverseString = new ReverseString();
-            Console.WriteLine("Enter a string to reverse:");
-            string input = Console.ReadLine();
-            string reversed = reverseString.Reverse(input);
-            Console.WriteLine($"Reversed string: {reversed}");
+            // Task 1: Reversing String (Stack)
+            _20_1.ReverseUserInput();
+
+            // Task 2: Ticketing System
+            Console.WriteLine("Task 2: Ticketing System");
+            _20_2.AddCustomer();
+            _20_2.AddCustomer();
+            _20_2.ViewQueue();
+            _20_2.ServeCustomer();
+            _20_2.ViewQueue();
 
             Console.WriteLine("\n");
 
+            // Task 3: Word Frequency
+            Console.WriteLine("Task 3: Word Frequency");
+            _20_3.CalculateWordFrequency();
 
-            // Exercise 21:
+            Console.WriteLine("\n");
 
+            // Task 4: Student List
+            Console.WriteLine("Task 4: Student List");
+            _20_4.AddStudent();
+            _20_4.AddStudent();
+            _20_4.PrintStudents();
+            _20_4.RemoveStudent();
+            _20_4.PrintStudents();
         }
     }
 }

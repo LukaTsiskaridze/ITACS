@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise_20
 {
-    class _20_1
+    public static class _20_1
     {
-        public string Reverse(string input)
+        // Method to reverse the string
+        public static string Reverse(string input)
         {
             Stack<char> stack = new Stack<char>();
 
@@ -27,6 +25,15 @@ namespace Exercise_20
 
             return reversed;
         }
-    }
 
+        // Method to handle user input
+        public static void ReverseUserInput()
+        {
+            Console.WriteLine("Enter a string to reverse:");
+            string input = Console.ReadLine(); // Get input from the user
+
+            string reversed = Reverse(input); // Call the Reverse method
+            Console.WriteLine($"Reversed string: {reversed}"); // Output the reversed string
+        }
+    }
 }
